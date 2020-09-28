@@ -12,8 +12,8 @@
      sub.dat$DateTime <- as.POSIXct(DT, tz = "", '%Y-%m-%d %H:%M:%S')
 
 # Construct plot and save it to PNG file
-     windows(width = 10, height = 8)
-     par(mfrow = c(2,2), mar = c(4,4,1,1))
+     windows(width = 10, height = 10)
+     par(mfrow = c(2,2), mar = c(2,4,2,2))
      
      with(sub.dat, plot(DateTime, Global_active_power, type = 'l',
                         xlab = '', ylab = 'Global Active Power'))

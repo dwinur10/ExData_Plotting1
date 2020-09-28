@@ -12,7 +12,7 @@
      sub.dat$DateTime <- as.POSIXct(DT, tz = "", '%Y-%m-%d %H:%M:%S')
 
 # Construct plot and save it to PNG file
-     windows(width = 10, height = 8)
+     windows(width = 10, height = 10)
      plot(sub.dat$DateTime, 
           sub.dat$Sub_metering_1,
           type = 'l', xlab = '',

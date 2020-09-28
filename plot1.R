@@ -8,7 +8,7 @@
      sub.dat$Date <- as.Date(sub.dat$Date, format = '%d/%m/%Y')
 
 # Construct plot and save it to PNG file
-     windows(width = 10, height = 8)
+     windows(width = 10, height = 10)
      hist(sub.dat$Global_active_power,
           col = 'red',
           xlab = 'Global Active Power (kilowatts)',
