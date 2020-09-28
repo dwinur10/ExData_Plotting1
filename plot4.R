@@ -13,7 +13,7 @@
 
 # Construct plot and save it to PNG file
      windows(width = 10, height = 10)
-     par(mfrow = c(2,2), mar = c(2,4,2,2))
+     par(mfrow = c(2,2), mar = c(4,4,1,1))
      
      with(sub.dat, plot(DateTime, Global_active_power, type = 'l',
                         xlab = '', ylab = 'Global Active Power'))
@@ -28,7 +28,7 @@
           lines(DateTime, Sub_metering_2, col = 'red')
           lines(DateTime, Sub_metering_3, col = 'blue')
           legend('topright', c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),
-                 col = c('black', 'red','blue'), lty = 1, lwd = 2)})
+                 col = c('black', 'red','blue'), lty = 1, lwd = 2, cex = 0.9)})
      
      with(sub.dat,
           plot(DateTime, Global_reactive_power,
